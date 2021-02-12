@@ -1,0 +1,49 @@
+body{
+	margin:auto;/*sayfayı full kaplamak için*/
+}
+
+.main{
+	display: grid;
+	margin: 0 0 0 0;
+	grid-template-rows: 200px 100px 300px 200px 100px; 
+	grid-template-columns: 1fr 5fr 1fr ;
+	grid-template-areas: "A  A  A"
+						 "D  B  C"
+						 "D  E  C"
+						 "D  E  C"
+						 "F  F  F"
+}
+
+.box{
+	border:3px solid black;
+}
+
+.box1{
+	background-color:yellow;
+	grid-area: A;
+}
+
+.box2{
+	background-color:green;
+	grid-area: B;
+}
+
+.box3{
+	background-color:purple;
+	grid-area: C;
+}
+
+.box4{
+	background-color:blue;
+	grid-area: D;
+}
+
+.box5{
+	background-color:skyblue;
+	grid-area: E;
+}
+
+.box6{
+	background-color:red;
+	grid-area: F;
+}
